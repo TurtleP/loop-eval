@@ -11,12 +11,12 @@ ProjectBoardTests.forEach(({ column, project_type, text, tags }) => {
     await page.goto("/");
 
     await test.step("Log into the application with default credentials", async () => {
-      const loginPage = new LoginPage(page).validate();
+      const loginPage = new LoginPage(page);
       await loginPage.login();
     });
 
     const projectsPage = await test.step(`Change project to ${project_type}`, async () => {
-      const projectsPage = new ProjectsPage(page).validate();
+      const projectsPage = new ProjectsPage(page);
       const projectType = Project[project_type];
 
       await projectsPage.selectProject(projectType);

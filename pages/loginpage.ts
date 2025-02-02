@@ -11,13 +11,14 @@ export class LoginPage {
 
   constructor(page: Page) {
     this.page = page;
+    return this.validate();
   }
 
   /**
    * Validate that the login page loaded successfully
    * @returns {LoginPage} The current instance for method chaining
    */
-  validate(): LoginPage {
+  private validate(): LoginPage {
     expect(this.page.locator(this.usernameField)).toBeTruthy();
     return this;
   }

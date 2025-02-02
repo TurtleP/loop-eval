@@ -33,13 +33,14 @@ export class ProjectsPage {
 
   constructor(page: Page) {
     this.page = page;
+    return this.validate();
   }
 
   /**
    * Validates that the projects page has loaded successfully.
    * @returns {ProjectsPage} The current instance for method chaining.
    */
-  validate(): ProjectsPage {
+  private validate(): ProjectsPage {
     expect(this.page.locator(this.boardTitle)).toBeTruthy();
     return this;
   }
