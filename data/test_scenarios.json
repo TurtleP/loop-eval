@@ -1,0 +1,60 @@
+[
+  {
+    "column": "TO_DO",
+    "project_type": "WEB_APPLICATION",
+    "text": "Implement user authentication",
+    "tags": [
+      "Feature",
+      "High Priority"
+    ]
+  },
+  {
+    "column": "TO_DO",
+    "project_type": "WEB_APPLICATION",
+    "text": "Fix navigation bug",
+    "tags": [
+      "Bug"
+    ]
+  },
+  {
+    "column": "IN_PROGRESS",
+    "project_type": "WEB_APPLICATION",
+    "text": "Design system updates",
+    "tags": [
+      "Design"
+    ]
+  },
+  {
+    "column": "TO_DO",
+    "project_type": "MOBILE_APPLICATION",
+    "text": "Push notification system",
+    "tags": [
+      "Feature"
+    ]
+  },
+  {
+    "column": "IN_PROGRESS",
+    "project_type": "MOBILE_APPLICATION",
+    "text": "Offline mode",
+    "tags": [
+      "Feature",
+      "High Priority"
+    ]
+  },
+  {
+    "column": "DONE",
+    "project_type": "MOBILE_APPLICATION",
+    "text": "App icon design",
+    "tags": [
+      "Design"
+    ]
+  },
+  {
+    "column": "REVIEW",
+    "project_type": "MARKETING_CAMPAIGN",
+    "text": "Landing page copy",
+    "tags": [
+      "Design"
+    ]
+  }
+]
