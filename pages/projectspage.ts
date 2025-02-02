@@ -21,15 +21,15 @@ export enum Column {
 };
 
 export class ProjectsPage {
-  readonly page: Page;
+  private readonly page: Page;
 
-  readonly boardTitle = "h1:has-text('Projects')";
-  readonly projectTab = "button > h2:has-text('{}')";
-  readonly projectTitle = "h1:has-text('{}')";
-  readonly columnType = "div > h2:has-text('{}')";
+  private readonly boardTitle = "h1:has-text('Projects')";
+  private readonly projectTab = "button > h2:has-text('{}')";
+  private readonly projectTitle = "h1:has-text('{}')";
+  private readonly columnType = "div > h2:has-text('{}')";
 
   /* TODO: not ideal, but no easier way to fetch card items(?) - an id would be ideal here */
-  readonly cardItem = "//div[@class='bg-white p-4 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow']"
+  private readonly cardItem = "//div[@class='bg-white p-4 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow']"
 
   constructor(page: Page) {
     this.page = page;

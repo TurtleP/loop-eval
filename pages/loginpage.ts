@@ -3,11 +3,11 @@ import { expect, type Page } from "@playwright/test";
 import { username, password } from "../data/credentials.json";
 
 export class LoginPage {
-  readonly page: Page;
+  private readonly page: Page;
 
-  readonly usernameField = "#username";
-  readonly passwordField = "#password";
-  readonly submitButton = "button:has-text('Sign in')";
+  private readonly usernameField = "#username";
+  private readonly passwordField = "#password";
+  private readonly submitButton = "button:has-text('Sign in')";
 
   constructor(page: Page) {
     this.page = page;
